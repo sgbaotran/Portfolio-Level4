@@ -99,4 +99,10 @@
     .homepage-name {
         font-size: 2em;
     }
+
+    .homepage-icon {
+        border-radius: 10px;
+        width: 45px;
+        height: 45px;
+    }
 }
