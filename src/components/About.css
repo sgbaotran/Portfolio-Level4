@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Roboto:wght@500&display=swap");
+
+.homepage {
+    margin: auto;
+    /* animation: move-left 2s ease-in; */
+}
+
+/* ================== PHOTO SECTION ==================  */
+
+.profile-pic {
+    width: 300px;
+    margin: 40px auto 40px auto;
+    border-radius: 50%;
+    position: relative;
+    animation: move-left 2s ease-in-out;
+    -webkit-box-shadow: 1px 5px 15px 9px rgba(0, 0, 0, 0.28);
+    box-shadow: 1px 5px 15px 9px rgba(0, 0, 0, 0.28);
+}
+
+@keyframes move-left {
+    0% {
+        transform: translateX(100px);
+    }
+    90% {
+        transform: translateX(-30px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* ================== NAME SECTION ==================  */
+
+.homepage-name {
+    font-family: "Roboto Condensed", sans-serif;
+    word-wrap: normal;
+    text-shadow: 4px 3px 0 #7a7a7a;
+    font-size: 3em;
+    text-shadow: 4px 3px 0 black;
+    animation: move-right 2s ease-in-out;
+}
+
+@keyframes move-right {
+    0% {
+        transform: translateX(-100px);
+    }
+    90% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* ================== DESCRIPTION SECTION ==================  */
+
+.homepage-description {
+    font-family: "Montserrat", sans-serif;
+}
+/* ================== CONTACT  SECTION ==================  */
+.homepage-icon-container {
+    animation: move-up 2s ease-in;
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes move-up {
+    0% {
+        /* opacity: 0.5; */
+        transform: translateY(100px);
+    }
+    80% {
+        /* opacity: 0.5; */
+        transform: translateY(-30px);
+    }
+    100% {
+        /* opacity: 1; */
+        transform: translateY(0px);
+    }
+}
+
+.homepage-icon {
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+    .homepage-name {
+        font-size: 3em;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .homepage-name {
+        font-size: 2em;
+    }
+}

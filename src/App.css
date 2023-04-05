@@ -1,0 +1,38 @@
+html,
+body {
+	overflow-x: hidden;
+}
+
+.app {
+	/* background: linear-gradient(-25deg, #19376D, #0B2447, #146C94, #262A56,#576CBC); */
+	/* linear-gradient(115deg, #dd2035, #15285b) */
+	/* background: linear-gradient(-25deg, #ee7752,#23d5ab, #9b3654, #23a6d5, #6423d5); */
+	background: linear-gradient(135deg, #c3e8dc, #3d1aea, #23d5ab, #ee7752);
+	background-size: 400% 400%;
+	animation: gradient 13s ease infinite;
+	min-height: 100vh;
+	overflow: auto; /*this fix the issue*/
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.logo {
+		margin: auto auto;
+	}
+	.app {
+		/* background: linear-gradient(15, #19376D, #0B2447, #146C94, #262A56,#576CBC); */
+		background: linear-gradient(-45deg, #ee7752, #9b3654, #23a6d5, #23d5ab);
+		animation: gradient 7s ease infinite;
+	}
+}

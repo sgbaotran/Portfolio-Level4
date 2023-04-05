@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Roboto:wght@500&display=swap");
+
+header {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1em;
+    animation: gradient 15s ease infinite;
+    min-height: 20%;
+}
+
+.logo {
+    width: auto;
+    height: 50px;
+}
+
+.nav-bar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    padding: 0 20px;
+    margin: auto 30px auto 30px;
+}
+
+.contact {
+    border-radius: 1em;
+    padding: 5px 20px;
+    margin: auto 30px auto 30px;
+    background-image: linear-gradient(to right top, #332e64, #3a4b86, #3d6aa7, #3f8ac7, #43abe5);
+    position: relative;
+    z-index: 1;
+}
