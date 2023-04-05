@@ -5,7 +5,7 @@ import ContactItems from '../data/contacts.json'
 export default function About(){
     const Contacts = ContactItems.map( ContactItem =>
         {return(
-            <a target="_blank" href={ContactItem.href}>
+            <a href={ContactItem.href}>
                  <img className='homepage-icon mx-4' src={require(`../media/${ContactItem.image}`)} alt=''></img>
             </a>
         )
