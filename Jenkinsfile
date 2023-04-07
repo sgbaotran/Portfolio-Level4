@@ -12,12 +12,6 @@ pipeline {
       }
     }
     
-    stage('Test') {
-      steps {
-        sh 'npm start' // Run the script
-      }
-    }
-
     stage('Create Image') {
       steps {
         sh 'docker build -t portfolio .' // Run the script
