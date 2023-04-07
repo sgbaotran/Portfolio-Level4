@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Set up') {
       steps {
-        sh 'npm version' // Run the script
+        sh 'npm install' // Run the script
       }
     }
     
