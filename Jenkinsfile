@@ -12,9 +12,22 @@ pipeline {
       }
     }
     
-    stage('Build') {
+    stage('Test') {
       steps {
         sh 'npm start' // Run the script
+      }
+    }
+
+    stage('Create Image') {
+      steps {
+        sh 'docker build -t portfolio .' // Run the script
+      }
+    }
+
+    stage('Push') {
+      steps {
+        sh 'docker login -u tephens03 -p 213052Bao' // Run the script
+        sh 'docker push portfolio'
       }
     }
     
