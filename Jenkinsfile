@@ -1,10 +1,11 @@
 pipeline {
   
-  agent any
+  agent {
+    docker {image 'node:16-alpine'}
+  }
   
   tools{
     nodejs "helloNode"
-    dockerTool "helloDocker"
   }
   
   stages {
