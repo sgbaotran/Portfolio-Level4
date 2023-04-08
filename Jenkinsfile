@@ -4,7 +4,7 @@ pipeline {
   
   tools{
     nodejs "helloNode"
-    docker "helloDocker"
+    dockerTool "helloDocker"
   }
   
   stages {
