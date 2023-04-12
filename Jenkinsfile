@@ -6,7 +6,6 @@ pipeline{
     stages('test'){
         steps{
             sh 'docker version'
-        
         }
     }
 }
