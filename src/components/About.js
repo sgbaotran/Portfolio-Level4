@@ -13,7 +13,7 @@ export default function About() {
     )
     return (
         <div className='container homepage'>
-            <img className='my-2 profile-pic drop-shadow-2xl' src={require('../media/Profile-picture.png')} alt=''></img>
+            <img className=' profile-pic drop-shadow-2xl' src={require('../media/Profile-picture.png')} alt=''></img>
             <div>
                 <h2 className='homepage-name text-center text-white md:text-8xl' >Gia Bao (Stephen) Tran</h2>
                 <p className='homepage-description text-center text-white md:text-4xl mt-5' >SRE Intern at Innovapost</p>
