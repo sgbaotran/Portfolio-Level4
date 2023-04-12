@@ -12,7 +12,7 @@
 
 }
 .timeline-title{
-    margin: 40px auto;
+    margin: 0 auto 40px auto;
     font-family: 'Montserrat', sans-serif;
     display: block;
     word-wrap: normal;

@@ -6,6 +6,7 @@
 
 .projects{
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .project-item{
@@ -16,8 +17,9 @@
     border-radius: 15px;
 }
 
+
 .project-title{
-    margin: 40px auto 50px auto;
+    margin: 0px auto 50px auto;
     font-family: 'Montserrat', sans-serif;
     display: block;
     word-wrap: normal;
