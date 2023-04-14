@@ -1,6 +1,13 @@
 [
 
     {
+        "id":3,
+        "name" : "Fipolio (In progress)",
+        "image": "Fipolio.png",
+        "description": "A finance portfolio application for income, spending mangements."
+
+    },
+    {
         "id":2,
         "name" : "gbaotran",
         "image": "gbaotran.png",

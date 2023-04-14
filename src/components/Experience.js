@@ -15,7 +15,7 @@ export default function Experience(){
                 <img src={require(`../media/${timeLineItem.image}`)} alt='' className=' timeline-icon' /> 
 
                 
-                <div className='timeline-box shadow-2xl		'>
+                <div className='timeline-item-container shadow-2xl'>
 
                     <h2 className=' timeline-name text-xl '>{timeLineItem.name} </h2>
 
@@ -24,9 +24,7 @@ export default function Experience(){
                     <p className='timeline-description '>{timeLineItem.description} </p>
 
                     <span className={position+'-arrow'} ></span>
-
-                </div>
-                
+                </div>                
             </div>
             )
         }

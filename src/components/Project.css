@@ -9,7 +9,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.project-box{
+.project-item{
 
     position: relative;
     width: 270px;
@@ -20,21 +20,21 @@
 /* If we hover on project-item, It glitches because as soon as the transform starts you aren't hovering any more.
 Therefore, we give it a container that when hover on the "outer", it flips*/
 
-.project-box:hover > .project-item{
+.project-item:hover > .project-item-container{
   transform: rotateY(180deg);
   cursor: pointer;
 }
 
 
-.project-item{
+.project-item-container{
   background-color: white;
   border-radius: 15px;
   width: 100%;
   height: 100%;
   position: absolute;
   transform-style:preserve-3d;
-  transition: all 1.5s ease;
-  transform-style:preserve-3d
+  transition: all 1.5s ease ;
+
 }
 
 .project-front{
@@ -67,6 +67,7 @@ Therefore, we give it a container that when hover on the "outer", it flips*/
 
 .project-image{
     height: 150px;
+    width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 
