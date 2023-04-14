@@ -1,4 +1,4 @@
-import './Project_2.css'
+import './Project.css'
 import projectItems from '../data/projects.json'
 
 
@@ -21,7 +21,7 @@ export default function Project() {
 
                         <img src={require(`../media/${projectItem.image}`)} alt='' className=' project-image'></img>
                         <div className='not-image'>
-                            <h2 className='project-name text-center my-2 text-xl'></h2>
+                            <h2 className='project-name text-center my-2 text-xl'>aaa</h2>
                             <p className='project-description text-slate-700'>hahahihi</p>
                         </div>
 
