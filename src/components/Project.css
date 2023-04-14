@@ -17,7 +17,10 @@
     border-radius: 15px;
 }
 
-.project-item:hover{
+/* If we hover on project-item, It glitches because as soon as the transform starts you aren't hovering any more.
+Therefore, we give it a container that when hover on the "outer", it flips*/
+
+.project-box:hover > .project-item{
   transform: rotateY(180deg);
   cursor: pointer;
 }
