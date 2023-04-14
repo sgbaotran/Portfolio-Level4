@@ -102,7 +102,9 @@
     .homepage-name {
         font-size: 2em;
     }
-
+    .homepage-icon-container{
+        margin-top: 2em !important;
+    }
     .homepage-icon {
         border-radius: 10px;
         width: 50px;
