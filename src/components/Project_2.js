@@ -5,19 +5,33 @@ import projectItems from '../data/projects.json'
 export default function Project() {
     const projects = projectItems.map(projectItem => {
         return (
-            <div class="card">
-                <div class="card__content">
+            <div className='project-box mb-10'>
 
-                    <div class="card__front">
-                        <h2 class="card__title">{projectItem.name}</h2>
-                        <p class="card__subtitle">{projectItem.description}</p>
+                <div className='project-item'>
+
+                    <div className='project-front'>
+                        <img src={require(`../media/${projectItem.image}`)} alt='' className=' project-image'></img>
+                        <div className='not-image'>
+                            <h2 className='project-name text-center my-2 text-xl'>{projectItem.name}</h2>
+                            <p className='project-description text-slate-700'>{projectItem.description}</p>
+                        </div>
                     </div>
 
-                    <div class="card__back">
-                        <p class="card__body">This would be some longer text that gives a description of the things from the other side I guess</p>
+                    <div className='project-back'>
+
+                        <img src={require(`../media/${projectItem.image}`)} alt='' className=' project-image'></img>
+                        <div className='not-image'>
+                            <h2 className='project-name text-center my-2 text-xl'></h2>
+                            <p className='project-description text-slate-700'>hahahihi</p>
+                        </div>
+
                     </div>
+
+
 
                 </div>
+
+
             </div>
         )
     })
@@ -27,7 +41,6 @@ export default function Project() {
 
         <>
             <h2 className='project-title text-center text-white' >PROJECTS</h2>
-
             <div className='container mx-auto projects'>
                 {projects}
             </div>
