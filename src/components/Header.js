@@ -10,7 +10,7 @@ function Header(){
                     
                     <nav className='hidden md:block'>
                         <ul className='nav-bar' >
-                            <li className='nav-item text-white'><a href='/'>About</a></li>
+                            <li className='nav-item text-white'><a href='/'>Home</a></li>
                             <li className='nav-item text-white'><a href='/experience'>Experience</a></li>
                             <li className='nav-item text-white'><a href='/project'>Project</a></li>
                         </ul>

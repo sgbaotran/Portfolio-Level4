@@ -1,8 +1,8 @@
-import './About.css'
+import './Home.css'
 import ContactItems from '../data/contacts.json'
 
 
-export default function About() {
+export default function Home() {
     const Contacts = ContactItems.map(ContactItem => {
         return (
             <a href={ContactItem.href}>

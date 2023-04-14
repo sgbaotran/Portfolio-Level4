@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header';
 import Experience from './components/Experience';
-import About from './components/About';
+import Home from './components/Home';
 import Project from './components/Project';
 
 
@@ -10,8 +10,8 @@ function App() {
   let component
   switch (window.location.pathname) {
 
-    case "/about":
-      component = <About />
+    case "/Home":
+      component = <home />
       break;
     case "/experience":
       component = <Experience />
@@ -20,7 +20,7 @@ function App() {
       component = <Project />
       break;
     default:
-      component = <About />;
+      component = <Home />;
       break;
   }
 
