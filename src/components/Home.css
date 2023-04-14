@@ -66,10 +66,12 @@
 }
 /* ================== CONTACT  SECTION ==================  */
 .homepage-icon-container {
+    margin: auto auto;
     animation: move-up 2s ease-in;
-    min-width: 50%;
+    max-width: 60%;
+    
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 @keyframes move-up {
@@ -97,6 +99,10 @@
     .homepage-name {
         font-size: 3em;
     }
+    .homepage-icon-container{
+        margin-top: 2em !important;
+        max-width: 80%;
+    }
 }
 @media only screen and (max-width: 400px) {
     .homepage-name {
@@ -104,6 +110,7 @@
     }
     .homepage-icon-container{
         margin-top: 2em !important;
+        max-width: 80%;
     }
     .homepage-icon {
         border-radius: 10px;

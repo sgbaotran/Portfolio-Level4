@@ -6,7 +6,7 @@ export default function Home() {
     const Contacts = ContactItems.map(ContactItem => {
         return (
             <a href={ContactItem.href}>
-                <img className='homepage-icon mx-4' src={require(`../media/${ContactItem.image}`)} alt=''></img>
+                <img className='homepage-icon' src={require(`../media/${ContactItem.image}`)} alt=''></img>
             </a>
         )
     }
@@ -17,7 +17,7 @@ export default function Home() {
             <div>
                 <h2 className='homepage-name text-center text-white md:text-8xl' >Gia Bao (Stephen) Tran</h2>
                 <p className='homepage-description text-center text-white md:text-4xl mt-5' >SRE Intern at Innovapost</p>
-                <div className='move-up homepage-icon-container flex my-20 mx-2  '>
+                <div className='move-up homepage-icon-container flex my-20   '>
                     {Contacts}
                 </div>
             </div>
