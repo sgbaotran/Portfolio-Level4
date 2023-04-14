@@ -9,13 +9,43 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.project-item{
-    background-color: white;
+.project-box{
+    position: relative;
     width: 270px;
     height: 350px;
-    box-shadow: 1px 5px 15px 9px rgba(0, 0, 0, 0.28);
     border-radius: 15px;
 }
+
+.project-item:hover{
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+
+.project-item{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style:preserve-3d;
+  transition: all 1.5s ease;
+  transform-style:preserve-3d
+}
+
+.project-front{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.project-back{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transform:  rotateY(180deg)
+}
+
 
 
 .project-title{
