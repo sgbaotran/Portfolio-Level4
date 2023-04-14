@@ -1,98 +1,99 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto+Condensed:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Roboto:wght@500&display=swap");
 
-.projects{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-.project-item{
-
-    position: relative;
-    width: 270px;
-    height: 350px;
-    border-radius: 15px;
+.project-item {
+  position: relative;
+  width: 270px;
+  height: 350px;
+  border-radius: 15px;
 }
 
 /* If we hover on project-item, It glitches because as soon as the transform starts you aren't hovering any more.
 Therefore, we give it a container that when hover on the "outer", it flips*/
 
-.project-item:hover > .project-item-container{
+.project-item:hover > .project-item-container {
   transform: rotateY(180deg);
   cursor: pointer;
 }
 
-
-.project-item-container{
+.project-item-container {
   background-color: white;
   border-radius: 15px;
   width: 100%;
   height: 100%;
   position: absolute;
-  transform-style:preserve-3d;
-  transition: all 1.5s ease ;
+  transform-style: preserve-3d;
+  transition: all 1.5s ease;
+  animation: glow .5s linear;
+}
+@keyframes glow {
+  0% {
+    opacity: 0;
+  }
 
+  100% {
+    opacity: 1;
+  }
 }
 
-.project-front{
+.project-front {
   width: 100%;
   height: 100%;
   position: absolute;
   backface-visibility: hidden;
 }
 
-.project-back{
+.project-back {
   width: 100%;
   height: 100%;
   position: absolute;
   backface-visibility: hidden;
-  transform:  rotateY(180deg)
+  transform: rotateY(180deg);
 }
 
-
-
-.project-title{
-    margin: 0px auto 50px auto;
-    font-family: 'Montserrat', sans-serif;
-    display: block;
-    word-wrap: normal;
-    font-size: 8em;
-    font-family: 'Roboto Condensed', sans-serif;
-    /* text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC; */
-    text-shadow: 4px 3px 0 black;
+.project-title {
+  margin: 0px auto 50px auto;
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  word-wrap: normal;
+  font-size: 8em;
+  font-family: "Roboto Condensed", sans-serif;
+  /* text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC; */
+  text-shadow: 4px 3px 0 black;
 }
 
-.project-image{
-    height: 150px;
-    width: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-
+.project-image {
+  height: 150px;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
-.project-name{
-    font-family: 'Roboto', sans-serif;
+.project-name {
+  font-family: "Roboto", sans-serif;
 }
 
-.not-image{
-    padding: 1em;
+.not-image {
+  padding: 1em;
 }
-
-
 
 /* ========= RESPONSIVE =========  */
 @media only screen and (max-width: 768px) {
-    .project-title{
-        margin: 40px auto;
-        font-family: 'Montserrat', sans-serif;
-        display: block;
-        word-wrap: normal;
-        font-size: 3.5em;
-        font-family: 'Roboto Condensed', sans-serif;
-        text-shadow: 4px 3px 0 black;
-
-    }
+  .project-title {
+    margin: 40px auto;
+    font-family: "Montserrat", sans-serif;
+    display: block;
+    word-wrap: normal;
+    font-size: 3.5em;
+    font-family: "Roboto Condensed", sans-serif;
+    text-shadow: 4px 3px 0 black;
+  }
 }

@@ -10,12 +10,12 @@ function Header(){
                     
                     <nav className='hidden md:block'>
                         <ul className='nav-bar' >
-                            <li className='nav-item text-white'>Services</li>
-                            <li className='nav-item text-white'>Project</li>
-                            <li className='nav-item text-white'>About</li>
+                            <li className='nav-item text-white'><a href='/'>About</a></li>
+                            <li className='nav-item text-white'><a href='/experience'>Experience</a></li>
+                            <li className='nav-item text-white'><a href='/project'>Project</a></li>
                         </ul>
                     </nav>
-                    <button className='contact hidden md:block text-white' >Contact</button>
+                    <a href='/contact' className='contact hidden md:block text-white' >Contact</a>
                 </div>
             </header>
 
