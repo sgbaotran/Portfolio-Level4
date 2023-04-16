@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Roboto:wght@500&display=swap");
+
+.contact-title {
+    margin: 0px auto 30px auto;
+    font-family: "Montserrat", sans-serif;
+    display: block;
+    word-wrap: normal;
+    font-size: 8em;
+    font-family: "Roboto Condensed", sans-serif;
+    /* text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC; */
+    text-shadow: 4px 3px 0 black;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+.form-item {
+    border-radius: 8px;
+    padding: 5px 10px;
+    width: 100%;
+    height: 2.5em;
+}
+
+.form-client-name,.form-client-information {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.form-client-name .form-item ,
+.form-client-information .form-item {
+    width: 49%;
+}
+
+.form-client-content {
+    height: 12em;
+    resize: none;
+}
+.form-client-submit {
+    margin: auto;
+    width: 30%;
+    background-color: white;
+    @apply font-bold py-2 px-4 rounded;
+    @apply bg-blue-500 text-white;
+}
+.form-client-submit:hover {
+    @apply bg-blue-700;
+}
+
+/* ========= RESPONSIVE =========  */
+@media only screen and (max-width: 768px) {
+    .contact-title {
+        margin: 40px auto;
+        font-family: "Montserrat", sans-serif;
+        display: block;
+        word-wrap: normal;
+        font-size: 3.5em;
+        font-family: "Roboto Condensed", sans-serif;
+        text-shadow: 4px 3px 0 black;
+    }
+}

@@ -1,5 +1,5 @@
 import './Experience.css'
-import timeLineItems from '../data/items.json'
+import timeLineItems from '../data/experience.json'
 
 export default function Experience(){
 
