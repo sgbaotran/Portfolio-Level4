@@ -25,6 +25,7 @@
     padding: 5px 10px;
     width: 100%;
     height: 2.5em;
+    display:block
 }
 
 .form-client-name,.form-client-information {
