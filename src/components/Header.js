@@ -2,7 +2,6 @@ import './Header.css'
 
 function Header(){
 
-
         return (
             <header>
                 <div className='py-2 mx-auto container flex justify-between flex-wrap 	'>
