@@ -9,24 +9,33 @@ import Contact from './components/Contact';
 
 function App() {
   let component
-  switch (window.location.pathname) {
 
-    case "/Home":
-      component = <home />
-      break;
-    case "/experience":
-      component = <Experience />
-      break;
-    case "/project":
-      component = <Project />
-      break;
-    case "/contact":
-      component = <Contact />
-      break;
-    default:
-      component = <Home />;
-      break;
+  if (window.screen.width > 420) {
+    switch (window.location.pathname) {
+      case "/Home":
+        component = <Home />
+        break;
+      case "/experience":
+        component = <Experience />
+        break;
+      case "/project":
+        component = <Project />
+        break;
+      case "/contact":
+        component = <Contact />
+        break;
+      default:
+        component = <Home />;
+        break;
+    }
   }
+
+  else {
+    console.log("why")
+    component = [<Home /> , <Experience /> , <Project /> , <Contact />]
+  }
+
+
 
 
   return (
