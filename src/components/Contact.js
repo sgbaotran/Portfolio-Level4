@@ -13,7 +13,7 @@ export default function Contact() {
                 {/* ON LEFT */}
 
                 <form className="mx-auto block px-3 md:px-10 md:w-8/12 client-contact-form" action="https://formsubmit.co/sttr2130@gmail.com" method="POST">
-                    <input type="hidden" name="_next" value="https://gbaotran.netlify.app/"/>
+                    <input type="hidden" name="_next" value="https://gbaotran.com/"/>
                     <input type="hidden" name="_captcha" value="false" />
 
                     <input className='form-item my-5 form-client-name ' type="text" name="name" placeholder='Name' required />
