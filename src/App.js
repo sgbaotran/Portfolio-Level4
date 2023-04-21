@@ -5,8 +5,6 @@ import Home from './components/Home';
 import Project from './components/Project';
 import Contact from './components/Contact';
 
-
-
 function App() {
   let component
 
@@ -31,12 +29,8 @@ function App() {
   }
 
   else {
-    console.log("why")
-    component = [<Home /> , <Experience /> , <Project /> , <Contact />]
+    component = [<Home />, <Experience />, <Project />, <Contact />]
   }
-
-
-
 
   return (
     <div className='app'>
