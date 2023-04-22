@@ -3,7 +3,7 @@ pipeline{
         docker {image 'node:16-alpine'}
     }
 
-    stages('test'){
+    stages('tet'){
         steps{ 
             sh 'docker version'
         }
