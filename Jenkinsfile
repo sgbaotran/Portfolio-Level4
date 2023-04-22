@@ -1,8 +1,5 @@
 pipeline{
-    agent{
-        docker {image 'node:16-alpine'}
-    }
-
+    agent any
     stages('tet'){
         steps{ 
             sh 'docker version'
