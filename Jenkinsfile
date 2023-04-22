@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        docker {image 'node:16-alpine'}
+        docker any
     }
     stages{
         stage('tet'){
