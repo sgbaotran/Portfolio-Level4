@@ -4,7 +4,7 @@ pipeline{
     }
 
     stages('test'){
-        steps{
+        steps{ 
             sh 'docker version'
         }
     }
