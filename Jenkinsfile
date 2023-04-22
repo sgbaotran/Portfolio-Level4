@@ -1,8 +1,11 @@
 pipeline{
     agent any
-    stages('tet'){
-        steps{ 
-            sh 'docker version'
+    stages{
+        stage('tet'){
+            steps{ 
+                sh 'docker version'           
+            }
+
         }
     }
 }
