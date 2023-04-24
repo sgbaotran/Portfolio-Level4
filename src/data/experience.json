@@ -3,7 +3,7 @@
         "id":3,
         "name" : "Innovapost",
         "date": "Jan 23 - Apr 23",
-        "image": "Innovapost.png",
+        "image": "./../media/Innovapost.png",
 
         "description": "Assigned with scripting for automatic monitoring, integrating new features, improving application functionality, and automating manual tasks as a member of the IT Operations team."
     },
@@ -11,7 +11,7 @@
         "id":2,
         "name" : "Zara",
         "date": "Aug 22 - Jan 23",
-        "image": "Zara.png",
+        "image": "./../media/Zara.png",
         "description": "Performed cashier duties and operated various electronic devices while also contributing to store layout design through visual merchandising, and being flexible to work in multiple departments as required."
 
     },
@@ -19,7 +19,7 @@
         "id":1,
         "name" : "Tiptop Tailors",
         "date": "Aug 21 - Apr 22",
-        "image": "TipTop.png",
+        "image": "./../media/TipTop.png",
         "description": "Assisting customers in selecting the perfect suit and providing tailored advice on tailoring, while boosting sales through effective collaboration."
     },
 
@@ -28,7 +28,7 @@
         "id":0,
         "name" : "NT Nail Supply",
         "date": "Aug 20 - Aug 21",
-        "image": "NT.png",
+        "image": "./../media/NT.png",
         "description": "Efficiently managing both online and phone orders, handling all sales transactions, and providing exceptional spa equipment installation services."
     }
 ]

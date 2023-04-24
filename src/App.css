@@ -1,6 +1,7 @@
 body,
 html {
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 .app {
     background: linear-gradient(135deg, #c3e8dc, #3d1aea, #23d5ab, #ee7752);
