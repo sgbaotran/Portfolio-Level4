@@ -12,7 +12,8 @@ export default function Experience(){
             
             <div className = {className}>
                 {/* ??? */}
-                <img src={require(timeLineItem.image)} alt='' className=' timeline-icon' /> 
+                <img src={require(`../media/${timeLineItem.image}`)} alt='' className=' timeline-icon' /> 
+
 
                 
                 <div className='timeline-item-container shadow-2xl'>
