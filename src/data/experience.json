@@ -1,5 +1,13 @@
 [
     {
+        "id":4,
+        "name" : "Flextra (Contract)",
+        "date": "Present",
+        "image": "./../media/Innovapost.png",
+
+        "description": "Developing a full stack website for as start up company."
+    },
+    {
         "id":3,
         "name" : "Innovapost",
         "date": "Jan 23 - Apr 23",
