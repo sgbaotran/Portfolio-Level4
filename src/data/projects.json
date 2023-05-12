@@ -1,10 +1,18 @@
 [
 
     {
-        "id":3,
-        "name" : "Fipolio (In progress)",
+        "id":4,
+        "name" : "Fipolio",
         "image": "Fipolio.png",
-        "description": "A finance portfolio application for income, spending mangements."
+        "description": "A finance portfolio application for income, spending managements."
+
+    },
+
+    {
+        "id":3,
+        "name" : "ToDo",
+        "image": "ToDo.png",
+        "description": "A reminder application, implemented using MERN."
 
     },
     {
