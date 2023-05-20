@@ -24,7 +24,8 @@ html {
     background: #555;
 }
 .app {
-    background: linear-gradient(135deg, #c3e8dc, #3d1aea, #23d5ab, #ee7752);
+    /* background: linear-gradient(135deg, #c3e8dc, #3d1aea, #23d5ab, #ee7752); */
+    background-color: #000;
     background-size: 400% 400%;
     animation: 13s infinite gradient;
     min-height: 100vh;
