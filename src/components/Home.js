@@ -16,7 +16,7 @@ export default function Home() {
             <img className=' profile-pic drop-shadow-2xl' src={require('../media/Profile-picture.png')} alt=''></img>
             <div>
                 <h2 className='homepage-name text-center text-white text-6xl sm:text-8xl' >Gia Bao (Stephen) Tran</h2>
-                <p className='homepage-description text-center text-3xl text-white text-3xl sm:text-4xl mt-5' >SRE Intern at Innovapost</p>
+                <p className='homepage-description text-center text-3xl text-white text-3xl sm:text-4xl mt-5' >Seeking for Co-op F23</p>
                 
                 <div className='move-up homepage-icon-container my-20 '>
                     {Contacts}
